@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!--The most modern update of HTML-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Makes the website compatible with modern web browsers-->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"> <!--This makes it able to scale neatly on mobile divices-->
+    <title>Screen Addiction Website</title> 
+          <link rel="preconnect" href="https://fonts.googleapis.com"> <!--This gives you access to different fonts for your text-->
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--This gives you access to different fonts for your text-->
+          <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300&family=Questrial&family=Roboto:wght@300&display=swap" rel="stylesheet"> <!--This gives you access to different fonts for your text-->
+          <link rel="stylesheet" href="css/header.css">
+          <link rel="stylesheet" href="css/buttons.css">
+          <link rel="stylesheet" href="css/images.css">
+          <link rel="stylesheet" href="styles/img.css">
+          <script type="text/javascript" src="./js/animations.js" DEFER></script>
+          <!--PROBLEMS I'M STILL HAVING-->
+        <!--1. How do I stop the other buttons from moving due to animation?-->
+        <!--2. How do I make the "GAMES" button animate just like the blue box?-->
+        <!--3. How do I properly link image files in subfolders within "img"? Including for the body background image.-->
+        <!--4. How do I organize all of my objects neatly? (Like in CSS, <div> objects etc. will be important later on)-->
+        <!--5. How do I remove the blue link text-decoration from everything?-->
+        
+
+        <!--PROBLEMS FIXED-->
+        <!--How do I remove the white background/make the image background stretch to entire website? Looks awkward otherwise. SOLUTION: remove "html" from .body in the CSS-->
+        <!--remember to make everything lower-case. SOLUTION: yes.-->
+        <!--How do I make "games" button not have the underline? Text-decoration: none doesnt seem to work. SOLUTION: use onclick="window.location.href='x.html''">X</button>-->
+        <!--How do I use CSS to make the <h1> and <p> tags change? They don't seem to be working. Maybe conflicts in specificity? SOLUTION: Remember to link the "images.css" stylesheet.-->
+        <!--How do I make my <li><ol><ul> react to CSS changes in "images"? SOLUTION: Remember to link the "images.css" stylesheet.-->
+
+<!--ChatGPT really helps ^^-->
+    </head>
+
+    <body>
+<!--Pages for the purposes of testing the website-->
+<p class="helpers" id="goalstatement" onclick="window.location.href='goalstatement.html';"><i>GOAL STATEMENT *for reference*</i></p>
+
+<p class="helpers" id="codetests" onclick="window.location.href='chatgpttests.html';"><i>Code/Webpage tester</i></p>
+
+<!--background image-->
+        <body style="background-image: url('img/blackdigitalbackgroud.webp')"></body></h1>
+
+        <!--The main things you should see on the front page-->
+    <div class="container-h2">Screen Addiction Website</div>
+
+        <div class="container">
+            <button class="mainbutton" id="testimonies" onclick="window.location.href='testimoniespage.html';">Testimonies</button>
+
+            <button class="mainbutton" id="statistics" onclick="window.location.href='statisticspage.html';">Statistics</button>
+
+            <button class="mainbutton2" id="games" onclick="window.location.href='gameswebpage.html';">GAMES</button>
+
+            <button class="box" id="animatedBox" onclick="window.location.href='gameswebpage.html';">GAMES</button>
+        </div>
+
+        <!--LEFTOVER/EXPERIMENT CODE GOES DOWN HERE (in regards to the front page)-->
+
+<!--Currently trying to get the "games" button to have the same animation as the blue box-->
+        
+    </body>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Test Website Title</title>
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300&family=Questrial&family=Roboto:wght@300&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="css/header.css">
+          <link rel="stylesheet" href="css/buttons.css">
+          <link rel="stylesheet" href="css/images.css">
+          <link rel="stylesheet" href="styles/img.css">
+          <script type="text/javascript" src="./js/animations.js" DEFER></script>
+        </style>
+    </head>
+    <body>
+
+      <body style="background-image: url('img/heroiclightningcave.jpeg')"></body>
+
+    
+      <!--probably easiest/first use of Javascript for the website-->
+<div class="level-up-button"><button class="level-up-button1" id="the-level-up">test</button></div>
+
+
+<button id="counterBtn">()</button>
+
+<script>
+  // Get the button element
+  var button = document.getElementById('counterBtn');
+
+  // Initialize count variable
+  var count = 0;
+
+  // Update button text function
+  function updateButtonText() {
+    button.textContent = '(' + count + ')';
+  }
+
+  // Add click event listener to the button
+  button.addEventListener('click', function() {
+    // Increment count
+    count++;
+
+    // Update button text
+    updateButtonText();
+  });
+
+  // Initial button text update
+  updateButtonText();
+</script>
+
+
+    </body>

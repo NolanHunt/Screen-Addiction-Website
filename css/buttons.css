@@ -1,0 +1,159 @@
+.container {
+  width: 1500px;
+  height: 230px;
+  padding: 20px;
+  text-align: center;
+  display: block; 
+}
+
+.container::-ms-tooltip {
+  opacity: 0.9;
+}
+
+.container-h2 {
+  width: 1500px;
+  height: 230px;
+  padding: 20px;
+  text-align: center;
+}
+
+.mainbutton {
+  font-family: Questrial;
+  background-color: rgb(28, 40, 17);
+  font-size: 18px;
+  color: rgb(234, 234, 234);
+  border:rgb(10, 36, 24);
+  border-style: solid;
+  height: 50px;
+  width: 120px;
+  margin-right: 70px;
+  margin-left: 70px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 100px;
+}
+
+.mainbutton:hover {
+  opacity: 0.9;
+  box-shadow: 4.5px 4.5px 12px     rgba(0, 0, 0, 0.25);
+}
+
+.mainbutton:active {
+  opacity: 0.8;
+  color:rgb(0, 0, 0);
+  border-color:rgb(0, 0, 0);
+  background-color:rgb(118, 198, 49);
+  text-decoration: underline;
+}
+
+.mainbutton2 {
+  font-family: Questrial;
+  background-color: rgb(28, 40, 17);
+  font-size: 18px;
+  color: rgb(234, 234, 234);
+  border:rgb(10, 36, 24);
+  border-style: solid;
+  height: 50px;
+  width: 120px;
+  margin-right: 70px;
+  margin-left: 70px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 100px;
+}
+
+.mainbutton2:hover {
+  opacity: 0.9;
+  box-shadow: 4.5px 4.5px 12px     rgba(0, 0, 0, 0.25);
+}
+
+.mainbutton2:active {
+  opacity: 0.8;
+  color:rgb(0, 0, 0);
+  border-color:rgb(0, 0, 0);
+  background-color:rgb(118, 198, 49);
+  text-decoration: underline;
+}
+
+/*The games button specifically requires complicated CSS, so a #tag is necessary for specifying its properties.*/
+#games {
+  font-family: Questrial;
+  background-color: rgb(204, 133, 190);
+  font-size: 100px;
+  color: rgb(199, 249, 0);
+  border:rgb(186, 224, 152);
+  border-style: solid;
+  margin-right: 70px;
+  margin-left: 70px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 25px;
+  margin-bottom: 85px;
+  transition: opacity 0.5s;
+  transition: box-shadow 0.9s;
+}
+
+#games:hover {
+  opacity: 0.9;
+  box-shadow: 4.5px 4.5px 12px     rgba(0, 0, 0, 0.25);
+  transform: scale(1.1);
+}
+
+#games:active {
+  opacity: 0.8;
+  color:rgb(0, 0, 0);
+  border-color:rgb(0, 0, 0);
+  background-color:rgb(118, 198, 49);
+  text-decoration: underline;
+  transform: scale(0.9);
+}
+
+.gamesexpanded {
+  width: 120px;
+  height: 120px;
+}
+
+
+/*The box is a test to see if expanding/contracting animation worked, leftover code from copy and pasting ChatGPT*/
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: width 1.3s, height 1.3s;
+  text-align: center;
+}
+
+.boxexpanded {
+  width: 120px;
+  height: 120px;
+}
+
+/*These are for forming grids.*/
+.item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 columns of equal width */
+  grid-gap: 20px; /* Adds gap between grid items */
+}
+
+.item div {
+  background-color: #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+.item button {
+  background-color: #ddd;
+  padding: 20px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.item button:hover {
+  background-color: #ccc;
+}
+
+/*This button is for the "Level Up" game.*/
+.counterBtn {
+  text-align: center;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Code & Webpage tests</title>
+    <style>
+      .container {
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .circle {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: blue;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: transform 0.2s ease-in-out;
+      }
+  </style>
+</head>
+<body>
+  <p>THIS PAGE CAN BE FOR TESTING CODE AND WEBPAGE LAYOUTS, MOSTLY FROM CHATGPT *HENCE THE NAME* BUT IT BE FROM ANYWHERE.</p>
+  
+  <div class="container">
+    <div class="circle" id="circle"></div>
+</div>
+
+<script>
+    const circle = document.getElementById('circle');
+
+    document.addEventListener('mousemove', (e) => {
+        const xPos = e.clientX;
+        const yPos = e.clientY;
+
+        circle.style.transform = `translate(${xPos}px, ${yPos}px)`;
+    });
+</script>
+
+</body>
+</html>
