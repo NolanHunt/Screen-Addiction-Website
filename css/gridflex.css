@@ -1,0 +1,48 @@
+/*This is for grids*/
+.item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 columns of equal width */
+  grid-gap: 20px; /* Adds gap between grid items */
+}
+
+.item div {
+  background-color: #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+.item button {
+  background-color: #ddd;
+  padding: 20px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.item button:hover {
+  background-color: #ccc;
+}
+
+/*This is for lists*/
+.statisticslist {
+  display: center;
+  color: white;
+  margin: 100px;
+  display: inline-block;
+  size: 100px;
+}
+
+li {
+  color: white;
+  size: 100px;
+}
+
+ul {
+  color: white;
+  size: 100px;
+}
+
+ol {
+  color: white;
+  size: 100px;
+}

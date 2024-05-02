@@ -32,7 +32,7 @@ a {
   z-index: -1; /* Ensure background is behind content */
 }
 
-/*This causes the elements to scroll down the page when you refresh it.*/
+/*TIED TO THE BACKGROUND ^ This causes the elements to scroll down the page when you refresh it.*/
 @keyframes fade-down {
 
   30% {
@@ -45,12 +45,29 @@ a {
   }
   }
 
+  .container {
+    width: 1500px;
+    height: 230px;
+    padding: 20px;
+    text-align: center;
+    display: block; 
+  }
+  
+  .container::-ms-tooltip {
+    opacity: 0.9;
+  }
+  
+  /*For the frontpage main title*/
   .container-h2 {
+    width: 1500px;
+    height: 230px;
+    padding: 20px;
+    text-align: center;
     color: white;
     font-size: 50px;
     margin: 100px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+  }  
 
   .container-h1 {
     color: white;
@@ -68,26 +85,7 @@ a {
     color: white;
   }
 
-/*This is for lists, specifically for the Statistics section of website.*/
-.statisticslist {
-  display: center;
-  color: white;
-  margin: 100px;
-  display: inline-block;
-  size: 100px;
-}
-
-li {
-  color: white;
-  size: 100px;
-}
-
-ul {
-  color: white;
-  size: 100px;
-}
-
-ol {
-  color: white;
-  size: 100px;
+/*Just for the chatGPT code/webpage tester page*/
+.codetestheader {
+  color: blue;
 }
